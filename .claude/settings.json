@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:8000/docs)",
+      "Bash(.venv/bin/pip install *)",
+      "Bash(uv pip *)",
+      "Bash(docker build *)",
+      "Bash(mkdir -p /Users/zhonghaoyang/Code/agent/Millipede/frontend/src/app/engineer/reviews/\\\\[id\\\\])",
+      "Bash(curl -s http://localhost:8000/openapi.json)",
+      "Bash(python3 -c \"import json,sys; paths=json.load\\(sys.stdin\\)['paths']; [print\\(p\\) for p in paths if 'engineer' in p]\")",
+      "Bash(curl -s -X POST http://localhost:8000/api/v1/auth/register -H 'Content-Type: application/json' -d '{\"email\":\"smoke_customer@test.com\",\"password\":\"password123\",\"display_name\":\"Smoke Customer\",\"org_name\":\"Smoke Org\"}')",
+      "Bash(docker exec *)"
+    ],
+    "additionalDirectories": [
+      "/Users/zhonghaoyang/Code/agent/Millipede/frontend/src/app/engineer/reviews"
+    ]
+  }
+}
